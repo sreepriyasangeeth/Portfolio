@@ -113,6 +113,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="images/campus.png" class="card-img-top" alt="image of campus ride sharing platform">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Ride Sharing Platform</h5>
+                            <p class="card-text">This is a project that helps students to share their ride to college.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="images/online exam.png" class="card-img-top" alt="image of online exam proctoring">
+                        <div class="card-body">
+                            <h5 class="card-title">AI-Based Online Exam Proctoring System</h5>
+                            <p class="card-text">This is a project that helps teachers to detect the malpractice of
+                                students using AI .</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,14 +158,22 @@
         </div>
     </div>
     <div class="page4 bg-dark min-vh-100 py-5">
-        <div class="text-warning text-center"id="achieve">
+        <div class="text-warning text-center" id="achieve">
             <h1>Skills And Acheivements</h1>
         </div>
-        <div class="container d-flex justify-content-center mt-5">
+        <div class="container d-flex justify-content-center mt-5 mx-auto">
             <div class="row w-100 justify-content-center mx-auto">
                 <div class="col-12 col-md-8 col-lg-6 text-center">
                     <img src="images/sreepriya.s_page-0001.jpg"
-                        class="img-fluid rounded border border-secondary shadow-sm" alt="asap">
+                        class="img-fluid rounded border border-secondary shadow-sm mb-4" alt="asap">
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <img src="images/snit_certificate.jpeg"
+                        class="img-fluid rounded border border-secondary shadow-sm mb-4" alt="snit">
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <img src="images/snit_certificate.jpeg"
+                        class="img-fluid rounded border border-secondary shadow-sm mb-4" alt="snit">
                 </div>
                 <div class="col-12 col-md-8 col-lg-6 text-center">
                     <img src="images/snit_certificate.jpeg" class="img-fluid rounded border border-secondary shadow-sm"
@@ -154,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="page5 bg-black min-vh-100"id="contact">
+    <div class="page5 bg-black min-vh-100" id="contact">
         <div class="container d-flex align-items-center flex-grow-1 py-5">
             <div class="row w-100 align-items-center text-center text-lg-start g-4 mx-auto">
                 <div class="col-12 col-lg-6 text-light">
@@ -165,30 +193,36 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 text-center text-lg-end ">
-                    <form class="container mt-5 d-flex justify-content-center ">
+                    <form id="contactForm" action="https://formspree.io/f/xykqoayw" method="POST"
+                        class="container mt-5 d-flex justify-content-center">
                         <div class="col-md-4">
+
                             <div class="mb-3 text-light text-start">
                                 <label for="userName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="userName" placeholder="Your Name">
+                                <input type="text" class="form-control" id="userName" name="name"
+                                    placeholder="Your Name" required>
                             </div>
+
                             <div class="mb-3 text-start text-light">
                                 <label for="userEmail" class="form-label">Email</label>
-                                <input type="email" class="class-control form-control w-100" id="userEmail"
-                                    placeholder="name@example.com">
+                                <input type="email" class="form-control w-100" id="userEmail" name="email"
+                                    placeholder="name@example.com" required>
                             </div>
 
                             <div class="mb-3 text-start text-light">
                                 <label for="formSubject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="formSubject"
+                                <input type="text" class="form-control" id="formSubject" name="subject"
                                     placeholder="How can I help you?">
                             </div>
+
                             <div class="mb-3 text-start text-light">
                                 <label for="formMessage" class="form-label">Message</label>
-                                <input type="text" class="form-control" id="formMessage"
-                                    placeholder="Type your message here...">
+                                <textarea class="form-control" id="userMessage" name="message" rows="5"
+                                    placeholder="Type your message here..." required></textarea>
                             </div>
+
                             <div class="mb-3 text-start justify-content-center">
-                                <button type="submit" class="btn btn-primary min-w-50">Submit</button>
+                                <button type="submit" class="btn btn-primary w-50">Submit</button>
                             </div>
 
                         </div>
